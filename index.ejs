@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <base href="<%=  htmlWebpackPlugin.options.basePath || '/' %>">
+    <% if ( htmlWebpackPlugin.files.favicon) { %>
+    <link rel="shortcut icon" href="./<%= htmlWebpackPlugin.files.favicon%>">
+    <% } %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navbar navbar-top">
+        <a href="#" class="button button-add-to-order">
+          Add to this order
+        </a>
+      </div>
+      <div class="container products">
+
+        <div class="row row-product">
+          <div class="product-image">
+            <img src="http://lorempixel.com/150/100/?a=1" />
+          </div>
+
+          <div class="product-content">
+            <a href="#" class="product-trash"></a>
+            <span class="product-title">Cheerios Toasted Whole Grain Oat Cereal, 18 oz</span>
+            <span class="product-sku">847523745</span>
+            <div class="product-price-quantity-row">
+              <div class="product-price">
+                <span class="product-old-price">$3.98</span>
+                <span class="product-current-price">$4.98</span>
+              </div>
+
+              <div class="product-quantity">
+                <input type="text" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-product">
+          <div class="product-image">
+            <img src="http://lorempixel.com/100/150/?b=2" />
+          </div>
+
+          <div class="product-content">
+            <a href="#" class="product-trash"></a>
+            <span class="product-title">Cheerios Toasted Whole Grain Oat Cereal, 18 oz</span>
+            <span class="product-sku">847523745</span>
+            <div class="product-price-quantity-row">
+              <div class="product-price">
+                <span class="product-current-price">$4.98</span>
+              </div>
+
+              <div class="product-quantity">
+                <input type="text" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row row-product">
+          <div class="product-image">
+            <img src="http://lorempixel.com/150/100/?b=3" />
+          </div>
+
+          <div class="product-content">
+            <a href="#" class="product-trash"></a>
+            <span class="product-title">Cheerios Toasted Whole Grain Oat Cereal, 18 oz</span>
+            <span class="product-sku">847523745</span>
+            <div class="product-price-quantity-row">
+              <div class="product-price">
+                <span class="product-old-price">$3.98</span>
+                <span class="product-current-price">$4.98</span>
+              </div>
+
+              <div class="product-quantity">
+                <input type="text" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-product">
+          <div class="product-image">
+            <img src="http://lorempixel.com/100/150/?b=4" />
+          </div>
+
+          <div class="product-content">
+            <a href="#" class="product-trash"></a>
+            <span class="product-title">Cheerios Toasted Whole Grain Oat Cereal, 18 oz</span>
+            <span class="product-sku">847523745</span>
+            <div class="product-price-quantity-row">
+              <div class="product-price">
+                <span class="product-current-price">$4.98</span>
+              </div>
+
+              <div class="product-quantity">
+                <input type="text" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-product">
+          <div class="product-image">
+            <img src="http://lorempixel.com/150/100/?b=5" />
+          </div>
+
+          <div class="product-content">
+            <a href="#" class="product-trash"></a>
+            <span class="product-title">Cheerios Toasted Whole Grain Oat Cereal, 18 oz</span>
+            <span class="product-sku">847523745</span>
+            <div class="product-price-quantity-row">
+              <div class="product-price">
+                <span class="product-old-price">$3.98</span>
+                <span class="product-current-price">$4.98</span>
+              </div>
+
+              <div class="product-quantity">
+                <input type="text" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-product">
+          <div class="product-image">
+            <img src="http://lorempixel.com/100/150/?" />
+          </div>
+
+          <div class="product-content">
+            <a href="#" class="product-trash"></a>
+            <span class="product-title">Cheerios Toasted Whole Grain Oat Cereal, 18 oz</span>
+            <span class="product-sku">847523745</span>
+            <div class="product-price-quantity-row">
+              <div class="product-price">
+                <span class="product-current-price">$4.98</span>
+              </div>
+
+              <div class="product-quantity">
+                <input type="text" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-product">
+          <div class="product-image">
+            <img src="http://lorempixel.com/150/100/?" />
+          </div>
+
+          <div class="product-content">
+            <a href="#" class="product-trash"></a>
+            <span class="product-title">Cheerios Toasted Whole Grain Oat Cereal, 18 oz</span>
+            <span class="product-sku">847523745</span>
+            <div class="product-price-quantity-row">
+              <div class="product-price">
+                <span class="product-old-price">$3.98</span>
+                <span class="product-current-price">$4.98</span>
+              </div>
+
+              <div class="product-quantity">
+                <input type="text" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-product">
+          <div class="product-image">
+            <img src="http://lorempixel.com/100/150/?x=2" />
+          </div>
+
+          <div class="product-content">
+            <a href="#" class="product-trash"></a>
+            <span class="product-title">Cheerios Toasted Whole Grain Oat Cereal, 18 oz</span>
+            <span class="product-sku">847523745</span>
+            <div class="product-price-quantity-row">
+              <div class="product-price">
+                <span class="product-current-price">$4.98</span>
+              </div>
+
+              <div class="product-quantity">
+                <input type="text" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary">
+          <span class="summary-desc">Items/total cost: </span>
+          <span class="summary-total">21 items / $121.94</span>
+        </div>
+
+      </div>
+      <div class="navbar navbar-bottom">
+        <a href="#" class="button button-left">Edit Order</a>
+        <a href="#" class="button button-right disabled">Finalize Order</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+.clearfix() {
+
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+}
+
+.button-icon(@url, @margin: 0px -40px 0px 15px) {
+  &:before {
+    content: "";
+    display: block;
+    background: url(@url) 4px 5px no-repeat;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-size: 32px, 32px;
+    margin: @margin;
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "test-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --port 3000 --watch --content-base ./public"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.7.2",
+    "less": "^2.6.0",
+    "less-loader": "^2.2.2",
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-livereload-plugin": "^0.5.1"
+  }
+}

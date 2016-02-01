@@ -1,0 +1,56 @@
+.navbar {
+
+  &.navbar-top {
+    position: fixed;
+    height: @navbar-top-height;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    .button-add-to-order {
+      width: 100%;
+      background-color: @color-white;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        background: url("../images/NewOrder.png") 0px 2px no-repeat;
+
+        // i need non white icon
+        background-color: black;
+
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-size: 32px, 32px;
+        margin: 0px 0 -15px;
+      }
+    }
+  }
+
+  &.navbar-bottom {
+    position: fixed;
+    height: @navbar-bottom-height;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .button-right {
+      width: 50%;
+      .button-icon("../images/Finalize_white.png");
+      &.disabled {
+        .button-icon("../images/Finalize_gray.png");
+      }
+    }
+
+    .button-left {
+      width: 50%;
+      .button-icon("../images/Edit_Order_cyan.png");
+    }
+  }
+
+  .navbar-menu {
+    // todo: implement
+  }
+
+}

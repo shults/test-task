@@ -1,0 +1,104 @@
+.products {
+
+  .row-product {
+    border-top: 2px solid @color-hr;
+    padding: 10px 0 10px 0;
+    margin: 0 20px 0;
+
+    .clearfix();
+
+    .product-image {
+      width: 20%;
+      float: left;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      max-height: 100px;
+      text-align: center;
+      background-color: @color-gray;
+    }
+
+    .product-content {
+      padding-left: 22%;
+
+      @trash-width: 30px;
+      @trash-ratio: 150 / 108;
+
+      .product-trash {
+        display: block;
+        float: right;
+        .clearfix();
+
+        width: @trash-width;
+        height: @trash-width * @trash-ratio;
+        margin-bottom: -@trash-width;
+        background: url("../images/Icon_Trash.png") 0 0 no-repeat;
+        background-size: @trash-width;
+      }
+
+      .product-title {
+        display: block;
+        color: @color-font-normal;
+        font-size: 18px;
+        padding-right: @trash-width;
+      }
+
+      .product-sku {
+        &:before {
+          content: "SKU: ";
+          font-weight: bold;
+        }
+        color: @color-sku;
+      }
+
+      .product-price-quantity-row {
+
+        line-height: 24px;
+
+        .product-price {
+          float: left;
+          .clearfix();
+
+          .product-old-price {
+            color: @color-sku;
+            text-decoration: line-through;
+            font-weight: bold;
+          }
+
+          .product-current-price {
+            color: @color-brand;
+            font-weight: bold;
+          }
+
+          .product-old-price + .product-current-price {
+            color: @color-red;
+          }
+        }
+
+        .product-quantity {
+          float: right;
+          .clearfix();
+
+          &:before {
+            content: "QTY: ";
+            font-weight: bold;
+            float: left;
+            .clearfix();
+          }
+
+          input {
+            margin-left: 8px;
+            width: 36px;
+            height: 20px;
+            text-align: center;
+            border-radius: 2px;
+            padding: 0;
+            border: 2px solid @color-light-gray;
+          }
+        }
+      }
+
+    }
+
+  }
+
+}

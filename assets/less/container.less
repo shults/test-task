@@ -1,0 +1,26 @@
+.container {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: calc(~"100% -" (@navbar-bottom-height + @navbar-bottom-height));
+  top: @navbar-bottom-height;
+  bottom: @navbar-bottom-height;
+  overflow-y: scroll;
+
+  &.row {
+    display: block;
+    width: 100%;
+  }
+}
+
+// @media (min-width: 20.0rem) { // < 320 px
+//   .container {}
+// }
+//
+// @media (min-width: 40.0rem) { // > 320 px && < 640px
+//   .container {}
+// }
+//
+// @media (min-width: 60.0rem) { // > 640px && < 960px
+//   .container {}
+// }
