@@ -11,15 +11,17 @@
 
 }
 
-.button-icon(@url, @margin: 0px -40px 0px 15px) {
+.button-icon(@url, @margin: 0px -60px 0px 15px) {
+  @button-icon-size: 60px;
+
   &:before {
     content: "";
     display: block;
-    background: url(@url) 4px 5px no-repeat;
+    background: url(@url) 0px (.1 * 60px) no-repeat;
     float: left;
-    width: 40px;
-    height: 40px;
-    background-size: 32px, 32px;
+    width: @button-icon-size;
+    height: @button-icon-size;
+    background-size: .8 * @button-icon-size, .8 * @button-icon-size;
     margin: @margin;
   }
 }

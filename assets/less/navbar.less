@@ -6,20 +6,44 @@
     top: 0;
     left: 0;
     right: 0;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    line-height: @navbar-top-height;
 
-    .button-add-to-order {
-      width: 100%;
-      background-color: @color-white;
+    .navbar-icon {
+      @hamburger-stripe-margin: 7px;
+      @hamburger-stripe-height: 2px;
 
-      &:before {
-        content: "";
-        display: inline-block;
-        background: url("../images/NewOrder.png") 0px 2px no-repeat;
+      @width: 40px;
+      @margin-left: 20px;
+
+      float: left;
+      width: @width;
+      margin-left: @margin-left;
+      margin-right: -(@margin-left + @width);
+
+      height: @navbar-top-height;
+      margin-top: (@navbar-top-height - (4 * @hamburger-stripe-margin + 3 * @hamburger-stripe-height)) / 2;
+      cursor: pointer;
+
+      span {
+        display: block;
         width: 40px;
-        height: 40px;
-        line-height: 40px;
-        background-size: 32px, 32px;
-        margin: 0px 0 -15px;
+        height: @hamburger-stripe-height;
+        margin-top: @hamburger-stripe-margin;
+        background-color: #ffffff;
+      }
+
+      &.active {
+        display: none;
+      }
+    }
+
+    .navbar-title {
+      color: #fff;
+      span {
+        color: #fff;
       }
     }
   }
@@ -45,8 +69,6 @@
     }
   }
 
-  .navbar-menu {
-    // todo: implement
-  }
+  .navbar-menu {}
 
 }
